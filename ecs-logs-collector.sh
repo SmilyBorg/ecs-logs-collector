@@ -41,7 +41,7 @@ progname='' # defined in parse_options
 
 help()
 {
-  echo "USAGE: ${progname} [--mode=[brief|debug]]"
+  echo "USAGE: ${progname} [--mode=[brief|debug|debug-only]]"
   echo "       ${progname} --help"
   echo ""
   echo "OPTIONS:"
@@ -56,7 +56,7 @@ help()
   echo "                 Docker daemon and the Amazon ECS container agent."
   echo "     debug-only  Enables debug mode for the Docker daemon and the Amazon"
   echo "                 ECS container agent without collecting logs"
-  
+  echo ""
 }
 
 parse_options()

@@ -20,6 +20,24 @@ Run this project as the root user:
 # bash ecs-logs-collector.sh
 ```
 
+```
+USAGE: ./ecs-logs-collector.sh [--mode=[brief|debug|debug-only]]
+       ./ecs-logs-collector.sh --help
+
+OPTIONS:
+     --mode  Sets the desired mode of the script. For more information,
+             see the MODES section.
+     --help  Show this help message.
+
+MODES:
+     brief       Gathers basic operating system, Docker daemon, and Amazon
+                 ECS container agent logs. This is the default mode.
+     debug       Collects 'brief' logs and also enables debug mode for the
+                 Docker daemon and the Amazon ECS container agent.
+     debug-only  Enables debug mode for the Docker daemon and the Amazon
+                 ECS container agent without collecting logs
+```
+
 ## Example output
 The project can be used in normal or debug mode (for Amazon Linux only).
 
